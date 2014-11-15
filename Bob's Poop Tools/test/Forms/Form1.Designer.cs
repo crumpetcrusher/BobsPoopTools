@@ -88,6 +88,8 @@
             this.Processed = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button3 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button29 = new System.Windows.Forms.Button();
+            this.clientBox = new System.Windows.Forms.ListView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button28 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
@@ -95,8 +97,38 @@
             this.button25 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
-            this.clientBox = new System.Windows.Forms.ListView();
-            this.button29 = new System.Windows.Forms.Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button49 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button48 = new System.Windows.Forms.Button();
+            this.button47 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button46 = new System.Windows.Forms.Button();
+            this.button45 = new System.Windows.Forms.Button();
+            this.button44 = new System.Windows.Forms.Button();
+            this.button43 = new System.Windows.Forms.Button();
+            this.button42 = new System.Windows.Forms.Button();
+            this.button41 = new System.Windows.Forms.Button();
+            this.button40 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.button50 = new System.Windows.Forms.Button();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.button51 = new System.Windows.Forms.Button();
+            this.button52 = new System.Windows.Forms.Button();
+            this.button53 = new System.Windows.Forms.Button();
+            this.button54 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button55 = new System.Windows.Forms.Button();
+            this.button56 = new System.Windows.Forms.Button();
+            this.button57 = new System.Windows.Forms.Button();
+            this.button58 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -108,6 +140,7 @@
             this.Ghost.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -116,10 +149,11 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.Ghost);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(-2, -2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(654, 522);
+            this.tabControl1.Size = new System.Drawing.Size(653, 520);
             this.tabControl1.TabIndex = 5;
             // 
             // tabPage1
@@ -147,7 +181,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(646, 496);
+            this.tabPage1.Size = new System.Drawing.Size(645, 494);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "XBL Stuff";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -587,7 +621,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(646, 496);
+            this.tabPage3.Size = new System.Drawing.Size(645, 494);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Xbox Console";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -626,7 +660,7 @@
             this.Ghost.Location = new System.Drawing.Point(4, 22);
             this.Ghost.Name = "Ghost";
             this.Ghost.Padding = new System.Windows.Forms.Padding(3);
-            this.Ghost.Size = new System.Drawing.Size(646, 496);
+            this.Ghost.Size = new System.Drawing.Size(645, 494);
             this.Ghost.TabIndex = 3;
             this.Ghost.Text = "Ghost";
             this.Ghost.UseVisualStyleBackColor = true;
@@ -691,10 +725,28 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(646, 496);
+            this.tabPage2.Size = new System.Drawing.Size(645, 494);
             this.tabPage2.TabIndex = 4;
             this.tabPage2.Text = "BO2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button29
+            // 
+            this.button29.Location = new System.Drawing.Point(6, 434);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(126, 23);
+            this.button29.TabIndex = 2;
+            this.button29.Text = "button29";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
+            // 
+            // clientBox
+            // 
+            this.clientBox.Location = new System.Drawing.Point(3, 213);
+            this.clientBox.Name = "clientBox";
+            this.clientBox.Size = new System.Drawing.Size(129, 215);
+            this.clientBox.TabIndex = 1;
+            this.clientBox.UseCompatibleStateImageBehavior = false;
             // 
             // groupBox5
             // 
@@ -771,33 +823,358 @@
             this.button23.UseVisualStyleBackColor = true;
             this.button23.Click += new System.EventHandler(this.button23_Click_1);
             // 
-            // clientBox
+            // tabPage4
             // 
-            this.clientBox.Location = new System.Drawing.Point(3, 213);
-            this.clientBox.Name = "clientBox";
-            this.clientBox.Size = new System.Drawing.Size(129, 215);
-            this.clientBox.TabIndex = 1;
-            this.clientBox.UseCompatibleStateImageBehavior = false;
+            this.tabPage4.Controls.Add(this.label3);
+            this.tabPage4.Controls.Add(this.button58);
+            this.tabPage4.Controls.Add(this.button57);
+            this.tabPage4.Controls.Add(this.button56);
+            this.tabPage4.Controls.Add(this.button55);
+            this.tabPage4.Controls.Add(this.label2);
+            this.tabPage4.Controls.Add(this.button54);
+            this.tabPage4.Controls.Add(this.button53);
+            this.tabPage4.Controls.Add(this.button52);
+            this.tabPage4.Controls.Add(this.button51);
+            this.tabPage4.Controls.Add(this.textBox13);
+            this.tabPage4.Controls.Add(this.button50);
+            this.tabPage4.Controls.Add(this.textBox11);
+            this.tabPage4.Controls.Add(this.button49);
+            this.tabPage4.Controls.Add(this.comboBox2);
+            this.tabPage4.Controls.Add(this.label1);
+            this.tabPage4.Controls.Add(this.button48);
+            this.tabPage4.Controls.Add(this.button47);
+            this.tabPage4.Controls.Add(this.comboBox1);
+            this.tabPage4.Controls.Add(this.button46);
+            this.tabPage4.Controls.Add(this.button45);
+            this.tabPage4.Controls.Add(this.button44);
+            this.tabPage4.Controls.Add(this.button43);
+            this.tabPage4.Controls.Add(this.button42);
+            this.tabPage4.Controls.Add(this.button41);
+            this.tabPage4.Controls.Add(this.button40);
+            this.tabPage4.Controls.Add(this.button39);
+            this.tabPage4.Controls.Add(this.button38);
+            this.tabPage4.Controls.Add(this.button37);
+            this.tabPage4.Controls.Add(this.button36);
+            this.tabPage4.Controls.Add(this.button35);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(645, 494);
+            this.tabPage4.TabIndex = 5;
+            this.tabPage4.Text = "AW";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
-            // button29
+            // button49
             // 
-            this.button29.Location = new System.Drawing.Point(6, 434);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(126, 23);
-            this.button29.TabIndex = 2;
-            this.button29.Text = "button29";
-            this.button29.UseVisualStyleBackColor = true;
-            this.button29.Click += new System.EventHandler(this.button29_Click);
+            this.button49.Location = new System.Drawing.Point(109, 249);
+            this.button49.Name = "button49";
+            this.button49.Size = new System.Drawing.Size(101, 23);
+            this.button49.TabIndex = 17;
+            this.button49.Text = "Set Body Color";
+            this.button49.UseVisualStyleBackColor = true;
+            this.button49.Click += new System.EventHandler(this.button49_Click);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(3, 222);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(207, 21);
+            this.comboBox2.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(71, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Non Host Mods";
+            // 
+            // button48
+            // 
+            this.button48.Location = new System.Drawing.Point(2, 278);
+            this.button48.Name = "button48";
+            this.button48.Size = new System.Drawing.Size(208, 22);
+            this.button48.TabIndex = 14;
+            this.button48.Text = "Reset Chams";
+            this.button48.UseVisualStyleBackColor = true;
+            this.button48.Click += new System.EventHandler(this.button48_Click);
+            // 
+            // button47
+            // 
+            this.button47.Location = new System.Drawing.Point(2, 249);
+            this.button47.Name = "button47";
+            this.button47.Size = new System.Drawing.Size(101, 22);
+            this.button47.TabIndex = 13;
+            this.button47.Text = "Set Outline";
+            this.button47.UseVisualStyleBackColor = true;
+            this.button47.Click += new System.EventHandler(this.button47_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(3, 195);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(207, 21);
+            this.comboBox1.TabIndex = 12;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // button46
+            // 
+            this.button46.Location = new System.Drawing.Point(110, 164);
+            this.button46.Name = "button46";
+            this.button46.Size = new System.Drawing.Size(100, 23);
+            this.button46.TabIndex = 11;
+            this.button46.Text = "Disable Laser";
+            this.button46.UseVisualStyleBackColor = true;
+            this.button46.Click += new System.EventHandler(this.button46_Click);
+            // 
+            // button45
+            // 
+            this.button45.Location = new System.Drawing.Point(2, 165);
+            this.button45.Name = "button45";
+            this.button45.Size = new System.Drawing.Size(101, 23);
+            this.button45.TabIndex = 10;
+            this.button45.Text = "Enable Laser";
+            this.button45.UseVisualStyleBackColor = true;
+            this.button45.Click += new System.EventHandler(this.button45_Click);
+            // 
+            // button44
+            // 
+            this.button44.Location = new System.Drawing.Point(110, 136);
+            this.button44.Name = "button44";
+            this.button44.Size = new System.Drawing.Size(100, 23);
+            this.button44.TabIndex = 9;
+            this.button44.Text = "Unlimited UAV Off";
+            this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.button44_Click);
+            // 
+            // button43
+            // 
+            this.button43.Location = new System.Drawing.Point(3, 136);
+            this.button43.Name = "button43";
+            this.button43.Size = new System.Drawing.Size(100, 23);
+            this.button43.TabIndex = 8;
+            this.button43.Text = "Unlimited UAV On";
+            this.button43.UseVisualStyleBackColor = true;
+            this.button43.Click += new System.EventHandler(this.button43_Click);
+            // 
+            // button42
+            // 
+            this.button42.Location = new System.Drawing.Point(110, 105);
+            this.button42.Name = "button42";
+            this.button42.Size = new System.Drawing.Size(100, 23);
+            this.button42.TabIndex = 7;
+            this.button42.Text = "Wall Hack Off";
+            this.button42.UseVisualStyleBackColor = true;
+            this.button42.Click += new System.EventHandler(this.button42_Click);
+            // 
+            // button41
+            // 
+            this.button41.Location = new System.Drawing.Point(2, 106);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(101, 23);
+            this.button41.TabIndex = 6;
+            this.button41.Text = "Wall Hack On";
+            this.button41.UseVisualStyleBackColor = true;
+            this.button41.Click += new System.EventHandler(this.button41_Click);
+            // 
+            // button40
+            // 
+            this.button40.Location = new System.Drawing.Point(110, 76);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(100, 23);
+            this.button40.TabIndex = 5;
+            this.button40.Text = "No Recoil Off";
+            this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.button40_Click);
+            // 
+            // button39
+            // 
+            this.button39.Location = new System.Drawing.Point(2, 77);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(101, 23);
+            this.button39.TabIndex = 4;
+            this.button39.Text = "No Recoil On";
+            this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
+            // 
+            // button38
+            // 
+            this.button38.Location = new System.Drawing.Point(110, 47);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(100, 23);
+            this.button38.TabIndex = 3;
+            this.button38.Text = "Red Boxs Off";
+            this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
+            // 
+            // button37
+            // 
+            this.button37.Location = new System.Drawing.Point(2, 48);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(101, 23);
+            this.button37.TabIndex = 2;
+            this.button37.Text = "Red Boxs On";
+            this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
+            // 
+            // button36
+            // 
+            this.button36.Location = new System.Drawing.Point(109, 19);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(101, 23);
+            this.button36.TabIndex = 1;
+            this.button36.Text = "Chrome Vision Off";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
+            // 
+            // button35
+            // 
+            this.button35.Location = new System.Drawing.Point(2, 19);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(101, 23);
+            this.button35.TabIndex = 0;
+            this.button35.Text = "Chrome Vision On";
+            this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(2, 414);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(104, 20);
+            this.textBox11.TabIndex = 18;
+            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
+            // 
+            // button50
+            // 
+            this.button50.Location = new System.Drawing.Point(112, 412);
+            this.button50.Name = "button50";
+            this.button50.Size = new System.Drawing.Size(100, 23);
+            this.button50.TabIndex = 19;
+            this.button50.Text = "Set Kill XP";
+            this.button50.UseVisualStyleBackColor = true;
+            this.button50.Click += new System.EventHandler(this.button50_Click);
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(2, 440);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(104, 20);
+            this.textBox13.TabIndex = 20;
+            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
+            // 
+            // button51
+            // 
+            this.button51.Location = new System.Drawing.Point(113, 438);
+            this.button51.Name = "button51";
+            this.button51.Size = new System.Drawing.Size(99, 23);
+            this.button51.TabIndex = 21;
+            this.button51.Text = "Set Suicide XP";
+            this.button51.UseVisualStyleBackColor = true;
+            this.button51.Click += new System.EventHandler(this.button51_Click);
+            // 
+            // button52
+            // 
+            this.button52.Location = new System.Drawing.Point(2, 467);
+            this.button52.Name = "button52";
+            this.button52.Size = new System.Drawing.Size(210, 23);
+            this.button52.TabIndex = 22;
+            this.button52.Text = "Set Public Cheater";
+            this.button52.UseVisualStyleBackColor = true;
+            this.button52.Click += new System.EventHandler(this.button52_Click);
+            // 
+            // button53
+            // 
+            this.button53.Location = new System.Drawing.Point(0, 372);
+            this.button53.Name = "button53";
+            this.button53.Size = new System.Drawing.Size(103, 23);
+            this.button53.TabIndex = 23;
+            this.button53.Text = "Force Host On";
+            this.button53.UseVisualStyleBackColor = true;
+            this.button53.Click += new System.EventHandler(this.button53_Click);
+            // 
+            // button54
+            // 
+            this.button54.Location = new System.Drawing.Point(109, 372);
+            this.button54.Name = "button54";
+            this.button54.Size = new System.Drawing.Size(101, 23);
+            this.button54.TabIndex = 24;
+            this.button54.Text = "Force Host Off";
+            this.button54.UseVisualStyleBackColor = true;
+            this.button54.Click += new System.EventHandler(this.button54_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(71, 398);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "XP Lobby";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // button55
+            // 
+            this.button55.Location = new System.Drawing.Point(2, 343);
+            this.button55.Name = "button55";
+            this.button55.Size = new System.Drawing.Size(101, 23);
+            this.button55.TabIndex = 26;
+            this.button55.Text = "GodMode On";
+            this.button55.UseVisualStyleBackColor = true;
+            this.button55.Click += new System.EventHandler(this.button55_Click);
+            // 
+            // button56
+            // 
+            this.button56.Location = new System.Drawing.Point(109, 343);
+            this.button56.Name = "button56";
+            this.button56.Size = new System.Drawing.Size(101, 23);
+            this.button56.TabIndex = 27;
+            this.button56.Text = "GodMode Off";
+            this.button56.UseVisualStyleBackColor = true;
+            this.button56.Click += new System.EventHandler(this.button56_Click);
+            // 
+            // button57
+            // 
+            this.button57.Location = new System.Drawing.Point(0, 314);
+            this.button57.Name = "button57";
+            this.button57.Size = new System.Drawing.Size(103, 23);
+            this.button57.TabIndex = 28;
+            this.button57.Text = "Infinite Ammo On";
+            this.button57.UseVisualStyleBackColor = true;
+            this.button57.Click += new System.EventHandler(this.button57_Click);
+            // 
+            // button58
+            // 
+            this.button58.Location = new System.Drawing.Point(109, 314);
+            this.button58.Name = "button58";
+            this.button58.Size = new System.Drawing.Size(101, 23);
+            this.button58.TabIndex = 29;
+            this.button58.Text = "Infinite Ammo Off";
+            this.button58.UseVisualStyleBackColor = true;
+            this.button58.Click += new System.EventHandler(this.button58_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(71, 300);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 13);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Host Modes";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 515);
+            this.ClientSize = new System.Drawing.Size(648, 514);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
-            this.Text = "Bob\'s Poop Tools V5  { Dash v16547 } { Ghost TU7 }";
+            this.Text = "Bob\'s Poop Tools V5  { Dash v16767 } { Ghost TU7 } { AW TU3 }";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -816,6 +1193,8 @@
             this.Ghost.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -891,6 +1270,38 @@
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.ListView clientBox;
         private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Button button44;
+        private System.Windows.Forms.Button button43;
+        private System.Windows.Forms.Button button42;
+        private System.Windows.Forms.Button button41;
+        private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button button35;
+        private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.Button button45;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button47;
+        private System.Windows.Forms.Button button48;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button button49;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Button button50;
+        private System.Windows.Forms.Button button51;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Button button52;
+        private System.Windows.Forms.Button button53;
+        private System.Windows.Forms.Button button54;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button56;
+        private System.Windows.Forms.Button button55;
+        private System.Windows.Forms.Button button57;
+        private System.Windows.Forms.Button button58;
+        private System.Windows.Forms.Label label3;
 
     }
 }

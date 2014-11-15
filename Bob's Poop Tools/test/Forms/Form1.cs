@@ -78,6 +78,14 @@ namespace test
             }
         }
 
+        private void AW_Cbuf_AddText(string text)
+        {
+            if (Connected)
+            {
+                ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, new object[] { 0, text });
+            }
+        }
+
         private void button4_Click(object sender, EventArgs e)
         {
             if (Connected)
@@ -500,6 +508,24 @@ namespace test
         {
             refreshTimer.Interval = 0xbb8;
             refreshTimer.Tick += new EventHandler(refreshTimer_Tick);
+
+            comboBox1.Items.AddRange(new object[] {
+            "-- Player Outlines --",
+            "Red",
+            "Green",
+            "Cyan",
+            "Orange",
+            "Yellow",
+            "Blue"});
+
+            comboBox2.Items.AddRange(new object[] {
+            "-- Select Laser Color --",
+            "Yellow",
+            "Small Red",
+            "Big Red",
+            "Small Blue",
+            "Wide Blue",
+            "Default"});
         }
 
         //Ghost
@@ -628,6 +654,242 @@ namespace test
                 }
             }
         }
+
+        private void button35_Click(object sender, EventArgs e)
+        {
+            AW_Cbuf_AddText("r_specularMap 2");
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            AW_Cbuf_AddText("r_specularMap 2");
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).WriteUInt32(0x826A1FB4, 0x609A001C);
+        }
+
+        private void button38_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).WriteUInt32(0x826A1FB4, 0x419A001C);
+        }
+
+        private void button39_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).WriteUInt32(0x8263ECFC, 0x60000000);
+        }
+
+        private void button40_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).setMemory(0x8263ECFC, new byte[] { 0x01 });
+        }
+
+        private void button41_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "r_znear 45");
+        }
+
+        private void button42_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "r_znear 1");
+        }
+
+        private void button43_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "bg_compassShowEnemies 1");
+        }
+
+        private void button44_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "bg_compassShowEnemies 0");
+        }
+
+        private void button45_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).setMemory(0x8378E100 + 0x59, new byte[] { 0x01 });
+        }
+
+        private void button46_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).setMemory(0x8378E100 + 0x59, new byte[] { 0x00 });
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button47_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem == "-- Player Outlines --")
+            {
+                MessageBox.Show("Please Select A Color Before Setting This Color Outline.", "Select Color First!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            if (comboBox1.SelectedItem == "Red")
+            {
+                ((XDevkit.IXboxConsole)xbc).setMemory(0x82675464, new byte[] { 0x38, 0xC0, 0x00, 0x04 });
+            }
+            if (comboBox1.SelectedItem == "Green")
+            {
+                ((XDevkit.IXboxConsole)xbc).setMemory(0x82675464, new byte[] { 0x38, 0xC0, 0x00, 0x06 });
+            }
+            if (comboBox1.SelectedItem == "Cyan")
+            {
+                ((XDevkit.IXboxConsole)xbc).setMemory(0x82675464, new byte[] { 0x38, 0xC0, 0x00, 0x08 });
+            }
+            if (comboBox1.SelectedItem == "Orange")
+            {
+                ((XDevkit.IXboxConsole)xbc).setMemory(0x82675464, new byte[] { 0x38, 0xC0, 0x00, 0x0A });
+            }
+            if (comboBox1.SelectedItem == "Yellow")
+            {
+                ((XDevkit.IXboxConsole)xbc).setMemory(0x82675464, new byte[] { 0x38, 0xC0, 0x00, 0x0C });
+            }
+            if (comboBox1.SelectedItem == "Blue")
+            {
+                ((XDevkit.IXboxConsole)xbc).setMemory(0x82675464, new byte[] { 0x38, 0xC0, 0x00, 0x0E });
+            }
+        }
+
+        private void button48_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).setMemory(0x82675464, new byte[] { 0x7F, 0xC6, 0xF3, 0x78 });
+        }
+
+        private void button49_Click(object sender, EventArgs e)
+        {
+            if (comboBox2.SelectedItem == "-- Player Body Colors --")
+            {
+                MessageBox.Show("Please Select A Color Before Setting This Body Color.", "Select Color First!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            if (comboBox2.SelectedItem == "Red")
+            {
+                ((XDevkit.IXboxConsole)xbc).setMemory(0x82675464, new byte[] { 0x38, 0xC0, 0x00, 0x03 });
+            }
+            if (comboBox2.SelectedItem == "Red")
+            {
+                ((XDevkit.IXboxConsole)xbc).setMemory(0x82675464, new byte[] { 0x38, 0xC0, 0x00, 0x12 });
+            }
+            if (comboBox2.SelectedItem == "Green")
+            {
+                ((XDevkit.IXboxConsole)xbc).setMemory(0x82675464, new byte[] { 0x38, 0xC0, 0x00, 0x16 });
+            }
+            if (comboBox2.SelectedItem == "Cyan")
+            {
+                ((XDevkit.IXboxConsole)xbc).setMemory(0x82675464, new byte[] { 0x38, 0xC0, 0x00, 0x18 });
+            }
+            if (comboBox2.SelectedItem == "Orange")
+            {
+                ((XDevkit.IXboxConsole)xbc).setMemory(0x82675464, new byte[] { 0x38, 0xC0, 0x00, 0x1A });
+            }
+            if (comboBox2.SelectedItem == "Yellow")
+            {
+                ((XDevkit.IXboxConsole)xbc).setMemory(0x82675464, new byte[] { 0x38, 0xC0, 0x00, 0x1C });
+            }
+            if (comboBox2.SelectedItem == "Blue")
+            {
+                ((XDevkit.IXboxConsole)xbc).setMemory(0x82675464, new byte[] { 0x38, 0xC0, 0x00, 0x1E });
+            }
+        }
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button50_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).Call(0x82419720, 0, "set scr_dom_scorelimit 9999; set scr_dom_score_kill " + textBox11.Text);
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "ui_showlist 1");
+        }
+
+        private void button51_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).Call(0x82419720, 0, "set scr_dom_scorelimit 9999; set scr_dom_score_suicide " + textBox13.Text);
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "ui_showlist 1");
+        }
+
+        private void button52_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).setMemory(0x820FFC94, new byte[] { 0x00 });
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "r_specularMap 2");
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "bg_compassShowEnemies 1");
+            ((XDevkit.IXboxConsole)xbc).WriteUInt32(0x826A1FB4, 0x609A001C);
+            ((XDevkit.IXboxConsole)xbc).WriteUInt32(0x823B073C, 0x409A0090);//FPS Not Updated
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "cg_fov 75");
+            ((XDevkit.IXboxConsole)xbc).setMemory(0x82675464, new byte[] { 0x38, 0xC0, 0x00, 0x06 });
+            ((XDevkit.IXboxConsole)xbc).setMemory(0x8378E100 + 0x59, new byte[] { 0x01 });
+            ((XDevkit.IXboxConsole)xbc).setMemory(0x8378E100 + 0x0D, new byte[] { 0x01 });
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "r_fog 0");
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "fx_drawClouds 0");
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "r_znear 45");
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "ui_showlist 1");
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "cg_scoreboardMyColor 0 1.28 0 .8");
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "ui_playerPartyColor 0 2.55 2.55 .8");
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "g_ScoresColor_Allies 0 0 0 .8");
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "g_ScoresColor_Axis 1 0 0 1");
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "lobby_searchingPartyColor 2.55 1.65 0 .8");
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "lowAmmoWarningNoReloadColor1 1 .3 .6 .8");
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "lowAmmoWarningNoReloadColor2 0 0 0 .8");
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "lowAmmoWarningColor1 0 2.55 2.55 .8");
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "lowAmmoWarningColor2 0 0 0 .8");
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "lowAmmoWarningNoAmmoColor1 2.55 2.15 0 .8");
+            ((XDevkit.IXboxConsole)xbc).Call(0x824B3190, 0, "lowAmmoWarningNoAmmoColor2 0 0 0 .8");
+        }
+
+        private void button53_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).WriteUInt32(0x82615EE0, 0x60000000);
+        }
+
+        private void button54_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).WriteUInt32(0x82615EE0, 0x896B000C);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox13_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public uint gEntity(int Client)
+        {
+            return (uint)(0x837C3A80 + (Client * 640));
+        }
+
+        private void button55_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).WriteInt32(gEntity(0) + 0x1AF, 1);
+        }
+
+        private void button56_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).WriteInt32(gEntity(0) + 0x1AF, ~1);
+        }
+
+        private void button57_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).WriteUInt32(0x82816134, 0x407D0002);
+        }
+
+        private void button58_Click(object sender, EventArgs e)
+        {
+            ((XDevkit.IXboxConsole)xbc).WriteUInt32(0x82816134, 0x397D0002);
+        }
+
+
+
 
         //private void button21_Click(object sender, EventArgs e)
         //{

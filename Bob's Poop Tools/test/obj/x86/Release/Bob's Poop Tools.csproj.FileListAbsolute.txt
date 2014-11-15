@@ -99,3 +99,11 @@ C:\Users\Administrator\Desktop\xblhammer\trunk\Bob's Poop Tools\test\obj\x86\Rel
 C:\Users\Administrator\Desktop\Bob's Poop Tools\test\bin\Release\test.exe.config
 C:\Users\Administrator\Desktop\Bob's Poop Tools\test\obj\x86\Release\test.exe
 C:\Users\Administrator\Desktop\Bob's Poop Tools\test\obj\x86\Release\test.pdb
+C:\Users\theru_000\Desktop\BobsPoopTools\Bob's Poop Tools\test\bin\Release\test.exe.config
+C:\Users\theru_000\Desktop\BobsPoopTools\Bob's Poop Tools\test\bin\Release\test.exe
+C:\Users\theru_000\Desktop\BobsPoopTools\Bob's Poop Tools\test\bin\Release\test.pdb
+C:\Users\theru_000\Desktop\BobsPoopTools\Bob's Poop Tools\test\obj\x86\Release\test.Form1.resources
+C:\Users\theru_000\Desktop\BobsPoopTools\Bob's Poop Tools\test\obj\x86\Release\test.Properties.Resources.resources
+C:\Users\theru_000\Desktop\BobsPoopTools\Bob's Poop Tools\test\obj\x86\Release\Bob's Poop Tools.csproj.GenerateResource.Cache
+C:\Users\theru_000\Desktop\BobsPoopTools\Bob's Poop Tools\test\obj\x86\Release\test.exe
+C:\Users\theru_000\Desktop\BobsPoopTools\Bob's Poop Tools\test\obj\x86\Release\test.pdb
